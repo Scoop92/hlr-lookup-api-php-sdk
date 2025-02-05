@@ -47,7 +47,7 @@ if ($response->httpStatusCode == 200) {
 
 ```php
 $response = $client->post('/hlr-lookup', array(
-    'msisdn' => '+905536939460'
+    'msisdn' =>7608807234
 ));
 
 // capture the HTTP status code and response body
@@ -60,7 +60,7 @@ The HLR API Response Object:
 ```json
 {
    "id":"f94ef092cb53",
-   "msisdn":"+14156226819",
+   "msisdn":"+7608807234",
    "connectivity_status":"CONNECTED",
    "mccmnc":"310260",
    "mcc":"310",
@@ -98,7 +98,7 @@ A detailed documentation of the attributes and connectivity statuses in the HLR 
 
 ```php
 $response = $client->post('/nt-lookup', array(
-    'number' => '+4989702626'
+    'number' => '+7608807234'
 ));
 
 // capture the HTTP status code and response body
@@ -111,7 +111,7 @@ The NT API Response Object:
 ```json
 {
      "id":"2ed0788379c6",
-     "number":"+4989702626",
+     "number":"+76088072346",
      "number_type":"LANDLINE",
      "query_status":"OK",
      "is_valid":true,
@@ -145,7 +145,7 @@ A detailed documentation of the attributes and connectivity statuses in the NT A
 
 ```php
 $response = $client->post('/mnp-lookup', array(
-    'msisdn' => '+14156226819'
+    'msisdn' => '+7608807234'
 ));
 
 // capture the HTTP status code and response body
@@ -158,7 +158,7 @@ The MNP API Response Object:
 ```json
 {
    "id":"e428acb1c0ae",
-   "msisdn":"+14156226819",
+   "msisdn":"+17608807234",
    "query_status":"OK",
    "mccmnc":"310260",
    "mcc":"310",
